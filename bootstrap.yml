@@ -1,0 +1,10 @@
+---
+- name:tomcat
+  boolean: true
+  task:
+   name: install apache
+   yum:
+    name: apache
+    state: installed
+  -name: started apache
+    
